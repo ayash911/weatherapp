@@ -67,7 +67,7 @@ body {
 }
 
 .future-forecast {
-  background: rgba(225, 225, 227, 0.8);
+  background: rgba(33, 33, 33, 0.8);
   padding: 25px;
   position: fixed;
   bottom: 0;
@@ -130,7 +130,7 @@ body {
   font-size: 12px;
 }
 
-#search {
+/* #search {
   margin-left: 10px;
   padding: 7px;
   font-size: large;
@@ -147,7 +147,7 @@ body {
 .search {
   margin-left: 50px;
   padding: 7px;
-}
+} */
 
 @media only screen and (max-width: 730px) {
   .container {
