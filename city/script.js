@@ -21,7 +21,9 @@ const createWeatherCard = (cityName, weatherItem, index) => {
   if (index === 0) {
     return `<div class="details">
                     <h2>${cityName} </h2>
-                    <h3>${weatherItem.dt_txt.split(" ")[0]} - ${weekday[d.getDay()]}</h3>
+                    <h3>${weatherItem.dt_txt.split(" ")[0]} - ${
+      weekday[d.getDay()]
+    }</h3>
                     <h6>Temperature: ${(weatherItem.main.temp - 273.15).toFixed(
                       2
                     )}°C</h6>
@@ -37,7 +39,7 @@ const createWeatherCard = (cityName, weatherItem, index) => {
   } else {
     return `<li class="card">
                     <h3>${weatherItem.dt_txt.split(" ")[0]}</h3>
-                    <h3>${weekday[(d.getDay() + index)%7]}</h3>
+                    <h3>${weekday[(d.getDay() + index) % 7]}</h3>
 
                     <img src="https://openweathermap.org/img/wn/${
                       weatherItem.weather[0].icon
